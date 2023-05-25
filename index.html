@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/a8f310c99d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!----header section starts---->
+    <div class="header">
+
+        <div class="container">
+        
+            <nav>
+                
+              <h1>HIMANI JOSHI</h1>
+                <ul id="sidemenu"> 
+                    <li class="li-item"><a href="#">Home</a></li>
+                    <li class="li-item"> <a href="#about">About</a></li>
+                    <li class="li-item"><a href="#portfolio">Portfolio</a></li>
+                    <li class="li-item"><a href="#contact">Contact</a> </li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <div> 
+                 <h2>Hi<span class="emoji"> &#x1F44B</span> I'am  </h2>
+                <h1 class="name"> Himani</h1>
+                <p>Navigating the World of Technology</p>
+                </div>
+                
+                
+            </div>
+           
+        </div>
+        </div>
+    </div>
+    <!----header section ends----->
+
+
+
+
+    <!---------------------About section starts--------------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+              <div class="about-col1">
+                    <img src="images/about-image.png" alt="">
+                </div>
+               
+                <div class="about-col2">
+                    <div>
+                        <h1 class="sub-title">About Me</h1><br>
+                        <p>Passionate about front-end development, I am an MCA graduate with a strong skill set in crafting engaging user experiences. Proficient in HTML, CSS, and JavaScript, I possess a solid foundation in modern front-end framework React. Through my academic journey, I have gained a deep understanding of software development principles and honed my problem-solving abilities. I am open to entry-level positions to contribute meaningfully and make a positive impact through technology.</p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link " onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li>
+                                <img src="images/html-5 (1).png" alt="" width="10%">
+                                <img src="images/css-3.png" alt="" width="10%">
+                                <img src="images/js.png" alt="" width="10%">
+                                <img src="images/sass.png" alt="" width="10%">
+                                <img src="images/bootstrap.png" alt="" width="10%">
+                                <img src="images/tailwind.jpg" alt="" width="10%">
+                                <img src="images/react.png" alt="" width="10%">
+                            </li>
+                        </ul>
+                    </div>
+        
+                    <div class="tab-contents" id="education">
+                        <ul>
+                           <table>
+                            <tr>
+                                <th>Qualification</th>
+                                <th> Year</th>
+                                <th>Percentage</th>
+                            </tr>
+
+                            <tr>
+                                <td>High School</td>
+                                <td>2016</td>
+                                <td>81</td>
+                            </tr>
+
+                            <tr>
+                                <td>Intermediate</td>
+                                <td>2018</td>
+                                <td>83</td> 
+                            </tr>
+
+                            <tr>
+                                <td>UG (BCA)</td>
+                                <td>2021</td>
+                                <td>86</td>
+                            </tr>
+
+                            <tr>
+                                <td>PG (MCA)</td>
+                                <td>2023</td>
+                                <td>-</td>
+                            </tr>
+                           </table>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!----------------------------About section ends----------------------->
+
+
+
+
+
+    <!-----------------------Projects section starts------------------------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+
+
+                <div class="work-list1">
+                    <div class="work ">
+                        <div class="image_container">
+                            <img src="images/work-1.png">
+                        </div>
+                        <div class="layer">
+                            <h3>Social Media App</h3>
+                            <a href=" https://himanijoshi0.github.io/CodePen/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="project1">
+                        <h2 class="project_name">ConnectNow</h2><br>
+                        <p>It is an interactive chatting app .This app showcases my skills as a web developer and demonstrates my ability to create engaging and functional user interfaces.</p><br>
+                        <p>Technologies used: HTML, CSS-SASS, REACT, FIREBASE</p>
+                        <a href=" https://himanijoshi0.github.io/CodePen/"><button><i class="fa-solid fa-up-right-from-square"></i></button></a>
+                    </div>
+                 </div>
+
+
+                <div class="work-list2">
+                    <div class=" work ">
+                        <div class="image_container">
+                            <img src="images/work-2.png">
+                        </div>
+                        <div class="layer">
+                            <h3>Code Editor</h3>
+                            <a href="https://connect-now-d36r-j3cte6r3m-himanijoshi0.vercel.app/login"><i class="fa-solid fa-up-right-from-square "></i></a>
+                        </div>
+                    </div>
+
+                    <div class="project2">
+                        <h2 class="project_name">Code Editor</h2><br>
+                        <p> CodePen Clone: A Platform for Creative Coding and Web Development.</p><br>
+                        <p>Technologies used: HTML, CSS, REACT</p>
+                        <a href="https://connect-now-d36r-j3cte6r3m-himanijoshi0.vercel.app/login"><button><i class="fa-solid fa-up-right-from-square"></i></button></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-----------------------Projects section ends------------------------------->
+
+
+
+    <!-----------------------------Contact---------------------------------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> himanijoshi225@gmail.com</p>
+                    <p><i class="fa-sharp fa-solid fa-square-phone"></i> 9520948727</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/himani-joshi-b756551a5/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/HimaniJoshi0"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="" download  class="btn">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form id="contact-form"action="https://formspree.io/f/mpzenber" method="POST">
+                        <input type="text" name="Name" placeholder="Your Name" autocomplete="off" required>
+                        <input type="email" name="email" placeholder="Your Email"  autocomplete="off" required>
+                        <textarea id="message"name="Message" rows="6" placeholder="Your Message"></textarea>
+
+                        <button type="submit" class="btn">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <!-----------------------------Contact ends---------------------------------------->
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>
