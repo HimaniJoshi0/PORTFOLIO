@@ -26,7 +26,6 @@ h1{
     width: 100%;
     height: 100vh;
     background-color: black;
-    background-image: url(../images/face-image.jpg);
     background-repeat: no-repeat;
     background-size: 50%;
     background-position:right;
@@ -46,6 +45,7 @@ nav{
 
 .logo{
     width: 140px;
+    
 }
 
 nav ul li{
@@ -79,14 +79,17 @@ nav ul li a:hover::after{                /* for animated hover effect*/
 }
 
 .header-text{
-    margin-top: 20%;
+    margin-top: 10%;
     font-size: 30px;
+    text-align: center;
   
 }
 
 .header-text p{
     font-size: 25px;
     margin-top: 10px;
+    font-family: sans-serif;
+    text-shadow: 2px 2px 2px white;
 }
 
 
@@ -113,6 +116,8 @@ nav ul li a:hover::after{                /* for animated hover effect*/
 .header-text p{
     color: var(--red);
     font-weight: 800;
+    font-size: 30px;
+
 }
 
 .emoji{
@@ -135,6 +140,105 @@ nav ul li a:hover::after{                /* for animated hover effect*/
      60% { transform: rotate( 0.0deg) }  
     100% { transform: rotate( 0.0deg) }
   }
+
+
+  .header_main{
+    display: flex;
+   
+  }
+
+  .cube_wrapper{
+    
+    width: 100%;
+    height: 100%;
+    margin-top: 150px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 1000px;
+    perspective-origin: top right;
+  }
+
+  .cube{
+    width: 300px;
+    height: 300px;
+   
+    position: relative;
+    transform-style: preserve-3d;
+    animation: rotate 10s linear infinite;
+  }
+
+  @keyframes rotate{
+    to{
+           transform: rotateX(0) rotateY(0) rotateZ(0);
+    }
+
+    from{
+        transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+    }
+  }
+
+  .sides{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    color: #ff004f;
+    font-weight: bolder;
+    border: 2px solid white;
+    box-shadow: 20px 20px 20px #ff004f;
+
+  }
+
+  .front{
+    background-color: black;
+    transform: translateZ(100px);
+    box-shadow: 20px 20px 20px #ff004f;
+  }
+  .back{
+    background-color: black;
+    transform: translateZ(-100px);
+    box-shadow: 20px 20px 20px #ff004f;
+  }
+  .top{
+    background-color: black;
+    transform: rotateX(90deg) translateZ(100px);
+    box-shadow: 20px 20px 20px #ff004f;
+  }
+  .left{
+    background-color: black;
+    transform: rotateY(90deg) translateZ(100px);
+    box-shadow: 20px 20px 20px #ff004f;
+  }
+  .right{
+    background-color: black;
+    transform: rotateY(90deg) translateZ(-100px);
+    box-shadow: 20px 20px 20px #ff004f;
+  }
+  .bottom{
+    background-color: black;
+    transform: rotateX(90deg) translateZ(-100px);
+    box-shadow: 20px 20px 20px #ff004f;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   
 
 /*------------About-----------------*/
@@ -163,14 +267,16 @@ nav ul li a:hover::after{                /* for animated hover effect*/
 
 .about-col2{
     flex-basis: 60%;
+    text-align: justify;
 
 }
 
 .sub-title{
- font-size: 60px;
+ font-size: 80px;
  font-weight: 600; 
  text-align: center;             
  color: var(--white);
+ text-shadow: 2px 2px var(--red);
 }
 
 .tab-titles{
@@ -326,6 +432,7 @@ table tr th{
 }
 
 .project1{
+    width: 100%;
     text-align: center;
     align-items: center;
     margin-top: 100px;
@@ -333,10 +440,10 @@ table tr th{
 }
 
 .project2{
+    width: 100%;
     text-align: center;
     align-items: center;
     margin-top: 100px;
-    margin-left: 120px;
     padding: 20px;
 }
 
@@ -440,17 +547,31 @@ nav .fa-solid{
 /*-------------css for small screen---------------------*/
 
 @media only screen and (max-width: 600px){
-    #header{
-        background-image: url("");
-    }
 
+
+    /*__header section__*/
+ 
+
+    .header_main{
+        display: flex;
+        flex-direction: column;
+    }
+    
     .header-text{
-        margin-top: 50%;
+        text-align: center;
+        margin-top: 30%;
         font-size: 20px;
     }
 
     .header-text h1{
-     font-size: 30px;
+     font-size: 50px;
+    }
+
+    .header-text p{
+        font-size: 30px;
+        margin-top: 20px;
+        font-family: sans-serif;
+      text-shadow: 2px 2px 2px white;
     }
 
     nav .fa-solid{
@@ -497,4 +618,70 @@ nav .fa-solid{
             height: 40%;
         }
     }
+
+    .cube{
+        width: 100px;
+        height: 100px;
+    }
+
+    .sides{
+        font-size: 20px;
+    }
+
+    /*--header ends --*/
+
+/*--About section --*/
+
+
+.row{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
 }
+
+
+.sub-title{
+    font-size: 50px;
+}
+
+.about-col2{
+    margin-top: 50px;
+    text-align: justify;
+}
+
+.about-col1 img{
+    width: 300px;
+   margin-top: 20px;
+}
+
+
+/*--About ends --*/
+
+
+/**--Projects--*/
+
+.work-list1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.work-list2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+
+}
+
+

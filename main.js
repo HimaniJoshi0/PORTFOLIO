@@ -6,9 +6,9 @@ function opentab(tabname){
      tablink.classList.remove("active-link");
   }
   for(tabcontent of tabcontents){
-    tabcontent.classList.remove("active-tab");               /*classList.remove is used to remve that class from html*/ 
+    tabcontent.classList.remove("active-tab");                 /*classList.remove is used to remve that class from html*/ 
  }
- event.currentTarget.classList.add("active-link");         /*javascript method to add css class to html elements*/
+ event.currentTarget.classList.add("active-link");               /*javascript method to add css class to html elements*/
  document.getElementById(tabname).classList.add("active-tab");
 }
 
