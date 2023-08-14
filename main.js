@@ -23,6 +23,8 @@ function closemenu(){
    sidemenu.style.right = "-200px";
 }
 
+
+
 document.getElementById("contact-form").addEventListener("submit", function(event) {
    event.preventDefault(); 
 
